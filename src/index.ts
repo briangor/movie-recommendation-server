@@ -1,5 +1,7 @@
 import express, { Express, Request, Response } from 'express';
 import dotenv from 'dotenv';
+import cors from 'cors';
+import mysql2 from 'mysql2';
 
 dotenv.config();
 
@@ -8,8 +10,15 @@ const app: Express = express();
 const url = 'http://localhost' 
 const port = process.env.PORT || 3100;
 
+const corsOptions: any = {
+    origin: [ 'http://127.0.0.1:3000', process.env.PROD_URL],
+}
+
+// middlewares
+app.use(cors(corsOptions));
+
 app.get('/', (req: Request, res: Response) => {
-    res.send('Hello');
+    res.send('Hello there');
 })
 
 app.listen(port, () => {
