@@ -1,0 +1,1 @@
+// Defines routes for movie-related endpoints (e.g., /movies)

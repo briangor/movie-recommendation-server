@@ -1,3 +1,4 @@
+// Configuration for database settings (e.g., host, user, password)
 interface DB {
     HOST: string;
     USER: string;
