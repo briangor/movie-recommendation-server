@@ -2,18 +2,11 @@ import mysql from 'mysql2'
 import dotenv from 'dotenv'
 dotenv.config()
 
-/* const pool = mysql.createPool({
+const pool = mysql.createPool({
     host: dbConfig.HOST,
     user: dbConfig.USER,
     password: dbConfig.PASSWORD,
-    database: dbConfig.DB
-}).promise() */
-
-const pool = mysql.createPool({
-    host: 'host',
-    user: 'user',
-    password: 'pwd',
-    database: 'db'
+    database: dbConfig.DATABASE
 }).promise()
 
 // GET all genres
