@@ -1,8 +1,8 @@
 // Configuration for database settings (e.g., host, user, password)
 
-/* import dotenv from 'dotenv';
+import dotenv from 'dotenv';
 
-dotenv.config(); */
+dotenv.config();
 
 interface DB {
     HOST: string;
