@@ -20,7 +20,7 @@ app.use(express.json());
 app.use('/api', movieRoutes);
 
 app.get('/', (req: Request, res: Response) => {
-    res.send('Hello there');
+    res.send('Movie Recommendation API is running...');
 })
 
 app.listen(port, () => {
